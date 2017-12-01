@@ -6,13 +6,6 @@ See http://code.google.com/p/protoc-gen-as3/ for more information.
 
 How to compile from source?
 
-1. make a directory called aaa
+1. mvn clean install on the pom.xml in buildTools/protoc_2_6_1/java/pom.xml This will generate the protoc dependency for the main project.
 
-2. execute
-protoc.exe  --proto_path=. "--proto_path=javalibs/protobuf-2.4.1/src" --java_out=./aaa options.proto
-
-protoc.exe "--proto_path=javalibs/protobuf-2.4.1/src" --java_out=./aaa  "javalibs/protobuf-2.4.1/src/google/protobuf/compiler/plugin.proto
-
-3. compile the jar
-
-
+2. mvn clean install on the pom.xml in this directory.
